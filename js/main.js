@@ -25,4 +25,17 @@
     window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(text), "_blank", "noopener");
     note.textContent = "¡Gracias! Se abrió WhatsApp con tu consulta.";
   });
+  const items = document.querySelectorAll("[data-reveal]");
+  if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    items.forEach(el => el.classList.add("is-in"));
+    return;
+  }
+  items.forEach(el => {
+    const sibs = el.parentElement.querySelectorAll(":scope > [data-reveal]");
+    el.style.setProperty("--i", Array.prototype.indexOf.call(sibs, el));
+  });
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); }
+  }), { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+  items.forEach(el => io.observe(el));
 })();
