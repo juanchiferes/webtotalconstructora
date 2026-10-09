@@ -7,7 +7,7 @@ Abrí `index.html` en el navegador, o servilo con `python3 -m http.server`.
 
 ## Personalizar
 - **WhatsApp:** constante `WA` al inicio de `js/main.js`, y los links `wa.me` / `tel:` en `index.html`.
-- **Instagram:** el link del footer en `index.html` todavía apunta a instagram.com (falta el usuario).
+- **Instagram:** link del footer y `sameAs` del JSON-LD en `index.html` (@total_constructora).
 - **Textos y servicios:** `index.html`.
 - **Colores y tipografías:** `css/styles.css`. Diseño monocromo con acento rojo `#d92d20`, IBM Plex Sans + IBM Plex Mono (Google Fonts).
 - **Logo:** `img/logo.svg` (negro) e `img/logo-blanco.svg`, con el texto en curvas.
