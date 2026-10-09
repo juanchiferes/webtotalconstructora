@@ -1,6 +1,6 @@
 # Total Constructora – sitio web
 
-Sitio institucional estático (HTML + CSS + JS, sin dependencias) para Total Constructora, empresa de mantenimiento de edificios con 30 años de experiencia. Publicado en https://www.totalconstructora.com.ar/.
+Sitio institucional estático (HTML + CSS + JS, sin dependencias) para Total Constructora, empresa de mantenimiento de edificios con 40 años de experiencia. Publicado en https://www.totalconstructora.com.ar/.
 
 ## Ver el sitio
 Abrí `index.html` en el navegador, o servilo con `python3 -m http.server`.
